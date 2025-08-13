@@ -35,7 +35,7 @@ console.log("Study Material Found:", materials);
 if (!materials || materials.length === 0) {
   studyMaterialSection.innerHTML = `
     <div class="material-item" style="text-align: center; padding: 20px;">
-      <img src="assets/upcoming.png" alt="Coming Soon" width="60" />
+      <img src="uploads/assets/upcoming.png" alt="Coming Soon" width="60" />
       <p style="margin-top: 10px; font-weight: bold; color: #555;">
         📦 Study Material for <strong>${code}</strong> is coming soon. Stay tuned!
       </p>
