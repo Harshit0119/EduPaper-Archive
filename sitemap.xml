@@ -1,0 +1,65 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://edupaper-archive.netlify.app/</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/about</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/contact</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/privacy</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/terms</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/school/10english</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/school/10maths</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/school/10science</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/school/10socialscience</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://edupaper-archive.netlify.app/school/10hindi</loc>
+<lastmod>2025-08-15T09:56:06+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edupaper-archive.netlify.app/subject.html?branch=cse&sem=4&code=dbms</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://edupaper-archive.netlify.app/subject.html?branch=cse&sem=4&code=os</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://edupaper-archive.netlify.app/subject.html?branch=cse&sem=4&code=cn</loc>
+  <priority>0.7</priority>
+</url>
+</urlset>
