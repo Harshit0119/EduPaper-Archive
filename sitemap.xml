@@ -51,15 +51,18 @@
 <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://edupaper-archive.netlify.app/subject.html?branch=cse&amp;sem=4&amp;code=cs-402</loc>
+  <loc>https://edupaper-archive.netlify.app/subject.html?branch=CSE&amp;sem=sem4&amp;code=BT-401</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://edupaper-archive.netlify.app/subject.html?branch=cse&amp;sem=4&amp;code=cs-403</loc>
+  <loc>https://edupaper-archive.netlify.app/subject.html?branch=CSE&amp;sem=sem4&amp;code=CS-402</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://edupaper-archive.netlify.app/subject.html?branch=cse&amp;sem=4&amp;code=cs-404</loc>
+  <loc>https://edupaper-archive.netlify.app/subject.html?branch=CSE&amp;sem=sem4&amp;code=CS-403</loc>
   <priority>0.7</priority>
 </url>
+<url>
+  <loc>https://edupaper-archive.netlify.app/subject.html?branch=CSE&amp;sem=sem4&amp;code=CS-404</loc>
+  <priority>0.7</priority> 
 </urlset>
