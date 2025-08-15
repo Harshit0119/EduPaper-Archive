@@ -36,6 +36,21 @@ const studyMaterialLinks = {
       "CS-402": [
         {
           type: "PDF",
+          name: "ADA Unit 1 Notes",
+          url: "materials/CSE/Sem4/ADA/ada1.pdf"
+        },
+        {
+          type: "PDF",
+          name: "ADA Unit 2 Notes",
+          url: "materials/CSE/Sem4/ADA/ada2.pdf"
+        },
+        {
+          type: "PDF",
+          name: "ADA Unit 3 Notes",
+          url: "materials/CSE/Sem4/ADA/ada3.pdf"
+        },
+        {
+          type: "PDF",
           name: "ADA Unit 1 & 2 Notes",
           url: "materials/CSE/Sem4/ADA/UNIT-1 & 2 notes.pdf"
         },
