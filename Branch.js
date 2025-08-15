@@ -405,5 +405,7 @@ const data = {
       { code: "AL-503-B", name: "Deep Learning.pdf" },
       { code: "AL-504-A", name: "AI in Health Care.pdf" },
     ],
-  },
+  }
 };
+
+module.exports = data;
