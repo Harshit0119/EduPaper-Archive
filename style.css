@@ -284,6 +284,20 @@ body {
   margin-bottom: 10px;
 }
 
+
+.header1 {
+  background: linear-gradient(135deg, #42a5f5, #66bb6a);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.header1 h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
 .header p {
   font-size: 1.1em;
   opacity: 0.95;
