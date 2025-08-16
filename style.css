@@ -343,6 +343,65 @@ body {
   gap: 20px;
   flex-wrap: wrap; /* Allows logo and text to stack on small screens */
 }
+/*  */
+.subject-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Each subject box/card */
+.subject-box,
+.subject-card {
+  flex: 1 1 calc(33.333% - 40px); /* 3 columns by default */
+  min-width: 280px;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Paper card links */
+.paper-card {
+  margin: 8px 0;
+}
+
+.paper-card a {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #e0f0ff;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+/* Section headings */
+.section-heading {
+  font-size: 1.5rem;
+  margin: 30px 0 10px;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .subject-box,
+  .subject-card {
+    flex: 1 1 calc(50% - 40px); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .subject-box,
+  .subject-card {
+    flex: 1 1 100%; /* 1 column on mobile */
+  }
+}
+
+/* ---------*/
 
 .logo {
   width: 120px;
