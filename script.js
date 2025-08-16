@@ -45,6 +45,11 @@ function loadPapers() {
   document.getElementById("papersList").innerHTML = "";
 }
 
+function toggleSyllabusMenu() {
+  const menu = document.getElementById("syllabusMenu");
+  menu.classList.toggle("hidden");
+}
+
 function updateViewButton() {
   const branch = document.getElementById("branch").value;
   const sem = document.getElementById("semester").value;
