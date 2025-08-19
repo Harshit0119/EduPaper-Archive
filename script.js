@@ -101,4 +101,9 @@ document.getElementById("hamburger").addEventListener("click", function () {
   document.getElementById("nav-links").classList.toggle("show");
 });
 
-
+function redirectToBranch() {
+  const selected = document.getElementById("branchSelect").value;
+  if (!selected) return;
+  // Redirect to a branch-specific material page
+  window.location.href = `materials/${selected}.html`;
+}

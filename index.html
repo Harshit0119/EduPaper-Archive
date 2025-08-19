@@ -75,11 +75,12 @@
         <div class="dashboard-box">
           <h3>📋 Today’s Highlights</h3>
           <ul>
-            <li><b>✅ syllabus added for school-section</b></li>
-            <li><b>✅ 12th Commerce study material</b></li>
-            <li><b>⚒️ UI enhancements for dropdown</b></li>
-            <li><b>📄 study material for CSE 4th sem is uploaded</b></li>
-            <li><b>📢 2025 papers coming soon</b></li>
+            <li><b>✅ Syllabus added for College Section(CSE & ECE)</b></li> 
+            <li><b>✅ Syllabus added for School Section</b></li>
+            <li><b>✅ Class 12 Commerce study material uploaded</b></li>
+            <li><b>⚒️ UI enhancements implemented for dropdown navigation</b></li>
+            <li><b>📄 CSE 4th Semester study material now available</b></li>
+            <li><b>📢 Syllabus for other semesters coming soon</b></li>
           </ul>
         </div>
 
@@ -172,11 +173,34 @@
         <!-- 🎓 COLLEGE SECTION -->
         <section class="card college fade-in" id="college-section">
           <h2>🎓 RGPV B.Tech Section</h2>
+          <h3>📘 Common Syllabus (Sem 1 & 2)</h3>
+          <p class="subject-note">
+            ⚠️ <strong>Note:</strong>These syllabi apply to all branches.
+          </p>
+          <ul>
+            <li><a href="materials/CSE/sem1.pdf">Semester 1 – Common to All Branches</a></li>
+            <li><a href="materials/CSE/sem2.pdf">Semester 2 – Common to All Branches</a></li>
+          </ul>
+
+          <h3>📚 Explore Branch-wise Syllabus</h3>
+          <label for="syllabusBranch">Syllabus:</label>
+          <select id="branchSelect" onchange="redirectToBranch()">
+            <option value="">-- Choose Branch --</option>
+            <option value="CSE">💻 CSE – Computer Science</option>
+            <option value="ECE">📡 ECE – Electronics & Communication</option>
+            <option value="ME">⚙️ ME – Mechanical Engineering</option>
+            <option value="CE">🏗️ CE – Civil Engineering</option>
+            <option value="EX">🔌 EX – Electrical Engineering</option>
+            <option value="CSIT">🌐 CSIT – Computer Science & IT</option>
+            <option value="AIML">🤖 AIML – AI & Machine Learning</option>
+          </select>
+
+          <h3>🧠 Explore Notes and PYQs</h3>
+          <div id="syllabusSemesters" style="margin-top: 15px;"></div>
           <p class="subject-note">
             ⚠️ <strong>Note:</strong> Subject names may differ by scheme.<br> Use <strong>subject codes</strong> (e.g.,
             <code>CS-603</code>) for accurate mapping.
           </p>
-
           <label for="branch">Select Branch:</label>
           <select id="branch" onchange="loadSemesters(); updateViewButton()">
             <option value="">--Select Branch--</option>
@@ -256,6 +280,5 @@
   </footer>
   <script src="Branch.js"></script>
   <script src="script.js"></script>
-</body>
 
 </html>
