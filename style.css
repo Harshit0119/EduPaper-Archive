@@ -333,7 +333,10 @@ body {
 /* logo */
 
 .header {
-  background: linear-gradient(135deg, #00bcd4, #4db6ac);
+  background-image: url('study.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   padding: 30px;
   display: flex;
@@ -341,9 +344,9 @@ body {
   justify-content: center;
   text-align: left;
   gap: 20px;
-  flex-wrap: wrap; /* Allows logo and text to stack on small screens */
+  flex-wrap: wrap; /*Allows logo and text to stack on small screens */
 }
-/*  */
+
 .subject-grid {
   display: flex;
   flex-wrap: wrap;
