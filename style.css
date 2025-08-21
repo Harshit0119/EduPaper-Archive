@@ -818,6 +818,25 @@ body {
   }
 }
 
+
+.select-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.select-wrapper select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 8px;
+  font-size: 1rem;
+}
+
 select {
   padding: 10px;
   border-radius: 8px;
@@ -825,6 +844,7 @@ select {
   font-size: 16px;
   margin: 10px 0;
   transition: border-color 0.3s ease;
+  width: 100%;
 }
 
 select:focus {
