@@ -124,6 +124,17 @@
         </div>
       </div>
     </section>
+    <!-- 📱 App Download Section -->
+    <section id="download-app" style="text-align:center; padding:20px;">
+      <h2 style="margin-bottom: 10px;">📱 Download EduPaper-Archive-App</h2>
+      <p style="margin-bottom:20px; font-size:16px; color:#333;">
+        Your trusted syllabus & notes companion
+      </p>
+      <a href="https://github.com/Harshit0119/EduPaper-Archive-App/raw/main/app-apk-68aab9ce65055-1756019150.apk"
+        download style="background:#1E88E5; color:white; padding:10px 20px; border-radius:5px; text-decoration:none;">
+        Download APK
+      </a>
+    </section>
 
     <section class="seo-text container">
       <h2>📘 CBSE & RGPV B.Tech Previous Year Papers – One Stop Archive</h2>
@@ -173,78 +184,78 @@
       <div class="layout-wrapper">
         <!-- 🎓 COLLEGE SECTION -->
         <section class="card college fade-in" id="college-section">
-  <h2>🎓 RGPV B.Tech Section</h2>
+          <h2>🎓 RGPV B.Tech Section</h2>
 
-  <h3>📘 Common Syllabus (Sem 1 & 2)</h3>
-  <p class="subject-note">
-    ⚠️ <strong>Note:</strong> These syllabi apply to all branches.
-  </p>
-  <ul>
-    <li><a href="materials/CSE/sem1.pdf">Semester 1 – Common to All Branches</a></li>
-    <li><a href="materials/CSE/sem2.pdf">Semester 2 – Common to All Branches</a></li>
-  </ul>
+          <h3>📘 Common Syllabus (Sem 1 & 2)</h3>
+          <p class="subject-note">
+            ⚠️ <strong>Note:</strong> These syllabi apply to all branches.
+          </p>
+          <ul>
+            <li><a href="materials/CSE/sem1.pdf">Semester 1 – Common to All Branches</a></li>
+            <li><a href="materials/CSE/sem2.pdf">Semester 2 – Common to All Branches</a></li>
+          </ul>
 
-  <h3>📚 Explore Branch-wise Syllabus</h3>
-  <div class="select-wrapper">
-    <label for="syllabusBranch">Syllabus:</label>
-    <select id="branchSelect" onchange="redirectToBranch()">
-      <option value="">-- Choose Branch --</option>
-      <option value="CSE">💻 CSE</option>
-      <option value="ECE">📡 ECE</option>
-      <option value="ME">⚙️ ME</option>
-      <option value="CE">🏗️ CE</option>
-      <option value="EX">🔌 EX</option>
-      <option value="CSIT">🌐 CSIT</option>
-      <option value="AIML">🤖 AIML</option>
-    </select>
-  </div>
+          <h3>📚 Explore Branch-wise Syllabus</h3>
+          <div class="select-wrapper">
+            <label for="syllabusBranch">Syllabus:</label>
+            <select id="branchSelect" onchange="redirectToBranch()">
+              <option value="">-- Choose Branch --</option>
+              <option value="CSE">💻 CSE</option>
+              <option value="ECE">📡 ECE</option>
+              <option value="ME">⚙️ ME</option>
+              <option value="CE">🏗️ CE</option>
+              <option value="EX">🔌 EX</option>
+              <option value="CSIT">🌐 CSIT</option>
+              <option value="AIML">🤖 AIML</option>
+            </select>
+          </div>
 
-  <h3>🧠 Explore Notes and PYQs</h3>
-  <div id="syllabusSemesters" style="margin-top: 15px;"></div>
-  <p class="subject-note">
-    ⚠️ <strong>Note:</strong> Subject names may differ by scheme.<br>
-    Use <strong>subject codes</strong> (e.g., <code>CS-603</code>) for accurate mapping.
-  </p>
+          <h3>🧠 Explore Notes and PYQs</h3>
+          <div id="syllabusSemesters" style="margin-top: 15px;"></div>
+          <p class="subject-note">
+            ⚠️ <strong>Note:</strong> Subject names may differ by scheme.<br>
+            Use <strong>subject codes</strong> (e.g., <code>CS-603</code>) for accurate mapping.
+          </p>
 
-  <div class="select-wrapper">
-    <label for="branch">Select Branch:</label>
-    <select id="branch" onchange="loadSemesters(); updateViewButton()">
-      <option value="">--Select Branch--</option>
-      <option value="CSE">CSE – Computer Science</option>
-      <option value="ECE">ECE – Electronics & Comm.</option>
-      <option value="ME">ME – Mechanical Engg.</option>
-      <option value="CE">CE – Civil Engg.</option>
-      <option value="EX">EX – Electrical Engg.</option>
-      <option value="CSIT">CSIT</option>
-      <option value="AIML">AIML</option>
-    </select>
-  </div>
+          <div class="select-wrapper">
+            <label for="branch">Select Branch:</label>
+            <select id="branch" onchange="loadSemesters(); updateViewButton()">
+              <option value="">--Select Branch--</option>
+              <option value="CSE">CSE – Computer Science</option>
+              <option value="ECE">ECE – Electronics & Comm.</option>
+              <option value="ME">ME – Mechanical Engg.</option>
+              <option value="CE">CE – Civil Engg.</option>
+              <option value="EX">EX – Electrical Engg.</option>
+              <option value="CSIT">CSIT</option>
+              <option value="AIML">AIML</option>
+            </select>
+          </div>
 
-  <div class="select-wrapper">
-    <label for="semester">Select Semester:</label>
-    <select id="semester" onchange="loadPapers(); updateViewButton()">
-      <option value="">--Select Semester--</option>
-      <option value="sem1">SEM 1</option>
-      <option value="sem2">SEM 2</option>
-      <option value="sem3">SEM 3</option>
-      <option value="sem4">SEM 4</option>
-      <option value="sem5">SEM 5</option>
-      <option value="sem6">SEM 6</option>
-      <option value="sem7">SEM 7</option>
-      <option value="sem8">SEM 8</option>
-    </select>
-  </div>
+          <div class="select-wrapper">
+            <label for="semester">Select Semester:</label>
+            <select id="semester" onchange="loadPapers(); updateViewButton()">
+              <option value="">--Select Semester--</option>
+              <option value="sem1">SEM 1</option>
+              <option value="sem2">SEM 2</option>
+              <option value="sem3">SEM 3</option>
+              <option value="sem4">SEM 4</option>
+              <option value="sem5">SEM 5</option>
+              <option value="sem6">SEM 6</option>
+              <option value="sem7">SEM 7</option>
+              <option value="sem8">SEM 8</option>
+            </select>
+          </div>
 
-  <div class="select-wrapper">
-    <label for="subject">Select Subject:</label>
-    <select id="subject" onchange="updateViewButton()">
-      <option value="">--Select Subject--</option>
-    </select>
-  </div>
+          <div class="select-wrapper">
+            <label for="subject">Select Subject:</label>
+            <select id="subject" onchange="updateViewButton()">
+              <option value="">--Select Subject--</option>
+            </select>
+          </div>
 
-  <button id="viewButton" style="display: none;" onclick="goToSubjectPage()">📄 View Question Papers</button>
-  <div id="papersList"></div>
-</section>
+          <button id="viewButton" style="display: none;" onclick="goToSubjectPage()">📄 View Question Papers</button>
+          <div id="papersList"></div>
+        </section>
       </div>
     </main>
 
