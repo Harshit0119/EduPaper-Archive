@@ -107,3 +107,67 @@ function redirectToBranch() {
   // Redirect to a branch-specific material page
   window.location.href = `materials/${selected}.html`;
 }
+
+
+const syllabusData = { 
+  "1": {
+    "BT-101": "../materials/CSE/sem1/BT-101.pdf",
+    "BT-102": "../materials/CSE/sem1/BT-102.pdf",
+    "BT-103": "../materials/CSE/sem1/BT-103.pdf",
+    "BT-104": "../materials/CSE/sem1/BT-104.pdf",
+    "BT-105": "../materials/CSE/sem1/BT-105.pdf",
+  },
+  "2": {
+    "BT-201": "../materials/CSE/sem2/BT-201.pdf",
+    "BT-202": "../materials/CSE/sem2/BT-202.pdf",
+    "BT-203": "../materials/CSE/sem2/BT-203.pdf",
+    "BT-204": "../materials/CSE/sem2/BT-204.pdf",
+    "BT-205": "../materials/CSE/sem2/BT-205.pdf",
+  },   
+  "5": {
+    "CS-501": "../materials/CSE/sem5/CS-501.pdf",
+    "CS-502": "../materials/CSE/sem5/CS-502.pdf",
+    "CS-503-A": "../materials/CSE/sem5/CS-503-A.pdf",
+    "CS-503-C": "../materials/CSE/sem5/CS-503-C.pdf",
+    "CS-504-A": "../materials/CSE/sem5/CS-504-A.pdf",
+    "CS-504-B": "../materials/CSE/sem5/CS-504-B.pdf",
+    "CS-504-C": "../materials/CSE/sem5/CS-504-C.pdf"
+  },
+};
+
+const semesterSelect = document.getElementById("semesterSelect");
+const subjectSelect = document.getElementById("subjectSelect");
+const pdfContainer = document.getElementById("pdfContainer");
+
+semesterSelect.addEventListener("change", () => {
+  const sem = semesterSelect.value;
+  subjectSelect.innerHTML = `<option value="">Select Subject</option>`;
+  pdfContainer.innerHTML = "";
+  
+  if (syllabusData[sem]) {
+    subjectSelect.disabled = false;
+    Object.keys(syllabusData[sem]).forEach(subject => {
+      const opt = document.createElement("option");
+      opt.value = subject;
+      opt.textContent = subject;
+      subjectSelect.appendChild(opt);
+    });
+  } else {
+    subjectSelect.disabled = true;
+  }
+});
+
+subjectSelect.addEventListener("change", () => {
+  const sem = semesterSelect.value;
+  const subject = subjectSelect.value;
+  const pdfPath = syllabusData[sem]?.[subject];
+
+  if (pdfPath) {
+    pdfContainer.innerHTML = `
+      <h3>${subject} Syllabus</h3>
+      <a href="${pdfPath}" target="_blank">📥 Download PDF</a>
+    `;
+  } else {
+    pdfContainer.innerHTML = "";
+  }
+});

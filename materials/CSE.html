@@ -66,58 +66,34 @@
 
   <div class="container">
     <section class="seo-text">
-      <p>Explore the complete <strong>B.Tech Computer Science syllabus</strong> semester-wise. These PDFs are curated for clarity, accuracy, and ease of access. Whether you're preparing for exams or planning your study roadmap, EduPaper Archive has you covered.</p>
+      <p>Explore the complete <strong>B.Tech Computer Science syllabus</strong> semester-wise. These PDFs are curated
+        for clarity, accuracy, and ease of access. Whether you're preparing for exams or planning your study roadmap,
+        EduPaper Archive has you covered.</p>
     </section>
 
-    <div class="year-grid">
-      <div class="year-card">
-        <h3>🧾 Semester 1</h3>
-        <a href="../materials/CSE/sem1.pdf" target="_blank" download>📥 Download Sem 1 PDF</a>
-      </div>
+    <!-- Dropdowns -->
+    <select id="semesterSelect">
+      <option value="">Select Semester</option>
+      <option value="1">1st Semester</option>
+      <option value="2">2nd Semester</option>
+      <option value="5">5th Semester</option>
+      <!-- Add more as needed -->
+    </select>
 
-      <div class="year-card">
-        <h3>🧾 Semester 2</h3>
-        <a href="../materials/CSE/sem2.pdf" target="_blank" download>📥 Download Sem 2 PDF</a>
-      </div>
+    <select id="subjectSelect" disabled>
+      <option value="">Select Subject</option>
+    </select>
 
-      <div class="year-card">
-        <h3>🧾 Semester 3</h3>
-        <a href="../materials/CSE/sem3.pdf" target="_blank" download>📥 Download Sem 3 PDF</a>
-      </div>
-
-      <div class="year-card">
-        <h3>🧾 Semester 4</h3>
-        <a href="../materials/CSE/sem4.pdf" target="_blank" download>📥 Download Sem 4 PDF</a>
-      </div>
-
-      <div class="year-card">
-        <h3>🧾 Semester 5</h3>
-        <a href="../materials/CSE/sem5.pdf" target="_blank" download>📥 Download Sem 5 PDF</a>
-      </div>
-
-      <div class="year-card">
-        <h3>🧾 Semester 6</h3>
-        <a href="../materials/CSE/sem6.pdf" target="_blank" download>📥 Download Sem 6 PDF</a>
-      </div>
-
-      <div class="year-card">
-        <h3>🧾 Semester 7</h3>
-        <a href="../materials/CSE/sem7.pdf" target="_blank" download>📥 Download Sem 7 PDF</a>
-      </div>
-
-      <div class="year-card">
-        <h3>🧾 Semester 8</h3>
-        <a href="../materials/CSE/sem8.pdf" target="_blank" download>📥 Download Sem 8 PDF</a>
-      </div>
-      <!-- Add more semesters as needed -->
-    </div>
+    <!-- PDF Display Area -->
+    <div id="pdfContainer" style="margin-top:20px;"></div>
 
     <a class="back-link" href="../index.html">← Back to Home</a>
 
     <section class="seo-text">
       <h2>📌 Why Use EduPaper Archive for CSE?</h2>
       <p>
-        Our syllabus PDFs are organized, branded, and updated for B.Tech Computer Science students. With semester-wise access and fast downloads, EduPaper Archive helps you stay ahead in your academic journey.
+        Our syllabus PDFs are organized, branded, and updated for B.Tech Computer Science students. With semester-wise
+        access and fast downloads, EduPaper Archive helps you stay ahead in your academic journey.
       </p>
     </section>
   </div>
